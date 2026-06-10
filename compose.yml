@@ -1,0 +1,24 @@
+services:
+  minecraft:
+    image: docker.io/itzg/minecraft-server:latest
+    ports:
+      - "25565:25565"
+      - "25575:25575"
+    user: root
+    environment:
+      EULA: "TRUE"
+      ENABLE_RCON : "TRUE"
+      RCON_PASSWORD : "teinf"
+      RCON_PORT: 25575
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./minecraft:/data
+  nodered:
+    image: docker.io/nodered/node-red:latest
+    environment:
+      - TZ=Europe/Luxembourg
+    ports:
+      - "1881:1880"
+    user: root
+    volumes:
+      - ./nodered:/data
