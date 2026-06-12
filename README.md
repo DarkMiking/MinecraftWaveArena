@@ -8,3 +8,9 @@ One of these commands is "!arena start", this command sets your world up for the
 The other command you need to use is "!wave start", this command starts the next wave. It only works when you have already used the first command and when there is currently no wave in progress. 
 ### !help
 If you forget any of these commands you can also type !help and the bot will remind you. You might also find some additional quality of life commands in the !help command.
+## How to setup the Project
+To setup this project you also need some material.
+* Raspberry PI
+* Raspberry PI Sense Hat (Optional)
+* Discord Bot
+### Setup the container on the Raspberry PI
