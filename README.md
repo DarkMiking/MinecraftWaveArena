@@ -22,7 +22,7 @@ To set up this project, you will need the following materials:
 ### Set up the container on the Raspberry Pi
 Install Podman on your Raspberry Pi if you do not have it already. You can use other container managers, but you may need to adjust the settings in the compose.yml file.
 
-Download the compose.yml file and place it into a separate directory. While in that directory, run the compose.yml file.
+Download the compose.yml file and place it into a separate directory. While in that directory, run the compose.yml file with podman. The command for this is "podman compose up"
 
 ### Set up Node-RED and Discord
 Open Node-RED in your browser on port 1881 (enter your Raspberry Pi's IP address followed by :1881). If you want to use the Sense Hat features, you will need to install Node-RED separately on the Raspberry Pi and open it on port 1880.
