@@ -29,6 +29,6 @@ Open Node-RED in your browser on port 1881 (enter your Raspberry Pi's IP address
 
 Download the project's Node-RED file and import it. For every node related to Discord, you will need to add your Discord bot's token and the channel ID of the channel you wish to use. In one of the Minecraft-related nodes (It is marked), change the username from "DarkMiking" to your own username (or the username of any other player you will be playing with).
 
-###How to set up your Minecraft world
+### How to set up your Minecraft world
 Open Minecraft with your preferred client. Go to "Multiplayer" and connect to the server by entering your Raspberry Pi's IP address. The arena event takes place around coordinates 0, 80, 0. Feel free to build your arena there or import an existing one. Once this is done, you should be ready to go!
 
