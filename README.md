@@ -16,5 +16,6 @@ To setup this project you also need some material.
 ### Setup the container on the Raspberry PI
 Install podman on your Raspberry PI if you don't have it yet. You can use other container managers if you would like to but then you might have to adjust some things in the compose.yml file.
 Download the compose.yml file and put it into a seperate directory. While you are in this directory run compose.yml.
-Now you need to open nodered in the broswer on the port 1881. If you want to use the Sense Hat's features you will need to install Node Red seperatly on the Raspberry PI and then open it on the Port 1880.
-Now download the Projects Node Red file and import it there. On every node that is related to Discord you will need to add your Discord bot's Token and the channel you want to use for this.
+### Setup Node-Red and Discord
+Now you need to open Node-Red in the broswer on the port 1881(Type your Raspberry's IP followed by :1881. If you want to use the Sense Hat's features you will need to install Node-Red seperatly on the Raspberry PI and then open it on the Port 1880.
+Now download the Projects Node Red file and import it there. On every node that is related to Discord you will need to add your Discord bot's Token and the channel-id of the channel you want to use for this.
