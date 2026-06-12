@@ -1,5 +1,5 @@
 # MinecraftWaveArena
-A school project, that uses a Discord Bot to summon a wave of mobs on a Minecraft Server. It is a fun way to train your combat skills in Minecraft.
+A school project, that uses a Discord Bot to summon a wave of mobs on a Minecraft Server. It is a fun way to train your combat skills in Minecraft. It also is compatible with a Sense Hat that will be used to show the progress you've made.
 ## How to use the Arena
 The usage of Wave Arena is very simple. When the Project was setup correctly on your PC you just need to know two commands.
 ### !arena start
@@ -18,4 +18,6 @@ Install podman on your Raspberry PI if you don't have it yet. You can use other 
 Download the compose.yml file and put it into a seperate directory. While you are in this directory run compose.yml.
 ### Setup Node-Red and Discord
 Now you need to open Node-Red in the broswer on the port 1881(Type your Raspberry's IP followed by :1881. If you want to use the Sense Hat's features you will need to install Node-Red seperatly on the Raspberry PI and then open it on the Port 1880.
-Now download the Projects Node Red file and import it there. On every node that is related to Discord you will need to add your Discord bot's Token and the channel-id of the channel you want to use for this.
+Now download the Projects Node Red file and import it there. On every node that is related to Discord you will need to add your Discord bot's Token and the channel-id of the channel you want to use for this. On one of the Minecraft related nodes you have to change the username form "DarkMiking" to your own username (or any other player that you will play this with).
+### How to setup your Minecraft World
+First open your Minecraft with the client of your preference. Then go to Multiplayer and connect to the server by typing your Raspberry's IP. The arena event happens around the coordinates 0,80,0, feel free to build your arena there or import any arena you might wanna use. After this you should be ready to go.
