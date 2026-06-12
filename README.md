@@ -27,7 +27,7 @@ Download the compose.yml file and place it into a separate directory. While in t
 ### Set up Node-RED and Discord
 Open Node-RED in your browser on port 1881 (enter your Raspberry Pi's IP address followed by :1881). If you want to use the Sense Hat features, you will need to install Node-RED separately on the Raspberry Pi and open it on port 1880.
 
-Download the project's Node-RED file and import it. For every node related to Discord, you will need to add your Discord bot's token and the channel ID of the channel you wish to use. In one of the Minecraft-related nodes, change the username from "DarkMiking" to your own username (or the username of any other player you will be playing with).
+Download the project's Node-RED file and import it. For every node related to Discord, you will need to add your Discord bot's token and the channel ID of the channel you wish to use. In one of the Minecraft-related nodes (It is marked), change the username from "DarkMiking" to your own username (or the username of any other player you will be playing with).
 
 ###How to set up your Minecraft world
 Open Minecraft with your preferred client. Go to "Multiplayer" and connect to the server by entering your Raspberry Pi's IP address. The arena event takes place around coordinates 0, 80, 0. Feel free to build your arena there or import an existing one. Once this is done, you should be ready to go!
