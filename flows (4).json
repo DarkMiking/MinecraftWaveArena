@@ -1,0 +1,3903 @@
+[
+    {
+        "id": "708823b3b82f1324",
+        "type": "tab",
+        "label": "MinecraftWaveArena",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9185ba39e18c02ca",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dcd958b414246d7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon zombie 5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1700,
+        "wires": [
+            [
+                "9185ba39e18c02ca"
+            ]
+        ]
+    },
+    {
+        "id": "8897b409ab3a6791",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon zombie -5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1660,
+        "wires": [
+            [
+                "9185ba39e18c02ca"
+            ]
+        ]
+    },
+    {
+        "id": "a62ae4edf4211024",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon zombie 5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1740,
+        "wires": [
+            [
+                "9185ba39e18c02ca"
+            ]
+        ]
+    },
+    {
+        "id": "127daf8b037fe70e",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon zombie -5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1780,
+        "wires": [
+            [
+                "9185ba39e18c02ca"
+            ]
+        ]
+    },
+    {
+        "id": "7c6ddccd4b3d6ada",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/time set 13000",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1620,
+        "wires": [
+            [
+                "9185ba39e18c02ca"
+            ]
+        ]
+    },
+    {
+        "id": "0330ae2897f3668f",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1700,
+        "wires": [
+            [
+                "127daf8b037fe70e",
+                "a62ae4edf4211024",
+                "3dcd958b414246d7",
+                "8897b409ab3a6791",
+                "7c6ddccd4b3d6ada",
+                "fddda9ab0c18c1f1",
+                "75bfd072c2947efa"
+            ]
+        ]
+    },
+    {
+        "id": "a29b47b4f643b8d7",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "/kill DarkMiking",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00dd8c0fd5fda8a7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/weather rain",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 440,
+        "wires": [
+            [
+                "a29b47b4f643b8d7"
+            ]
+        ]
+    },
+    {
+        "id": "3f4ee2abe9ff8993",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "!help",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "!weather rain ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "!weather clear",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "9838a3f1512f236b"
+            ],
+            [
+                "00dd8c0fd5fda8a7",
+                "24e7f4382fc48c1a"
+            ],
+            [
+                "d93e6a26f65488da",
+                "1d992468cff55355"
+            ]
+        ]
+    },
+    {
+        "id": "0f746ab821a97eea",
+        "type": "discordMessage",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channelIdFilter": "1421183909135253575",
+        "token": "",
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "3f4ee2abe9ff8993"
+            ]
+        ]
+    },
+    {
+        "id": "24e7f4382fc48c1a",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Its raining now",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "2eec20ad9035bed3"
+            ]
+        ]
+    },
+    {
+        "id": "2eec20ad9035bed3",
+        "type": "discordMessageManager",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channel": "1421183909135253575",
+        "token": "",
+        "x": 690,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e435fac58d2fe866",
+        "type": "serverinfo",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "x": 270,
+        "y": 700,
+        "wires": [
+            [
+                "7590f34228784b75"
+            ]
+        ]
+    },
+    {
+        "id": "d0e171458eb0b689",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 700,
+        "wires": [
+            [
+                "e435fac58d2fe866"
+            ]
+        ]
+    },
+    {
+        "id": "7590f34228784b75",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 1",
+        "func": "\nreturn { payload: msg.payload.players.length}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 700,
+        "wires": [
+            [
+                "66e0e16eb59d98f3",
+                "31f2ae6b2786015b",
+                "2e43eeacd3d74703"
+            ]
+        ]
+    },
+    {
+        "id": "784779fd60b750cf",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "length",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66e0e16eb59d98f3",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 740,
+        "wires": [
+            [
+                "784779fd60b750cf"
+            ]
+        ]
+    },
+    {
+        "id": "31f2ae6b2786015b",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 2",
+        "func": "if(msg.payload>flow.get(\"length\")){\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 700,
+        "wires": [
+            [
+                "e792fa4077e62531"
+            ]
+        ]
+    },
+    {
+        "id": "2e43eeacd3d74703",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 3",
+        "func": "if(msg.payload<flow.get(\"length\")){\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 660,
+        "wires": [
+            [
+                "21eb697f41d63ad8"
+            ]
+        ]
+    },
+    {
+        "id": "e792fa4077e62531",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A player joined Mika's Server",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 700,
+        "wires": [
+            [
+                "f44f103a79444af8"
+            ]
+        ]
+    },
+    {
+        "id": "21eb697f41d63ad8",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A player left Mika's server",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 660,
+        "wires": [
+            [
+                "f44f103a79444af8"
+            ]
+        ]
+    },
+    {
+        "id": "f44f103a79444af8",
+        "type": "discordMessageManager",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channel": "1421183909135253575",
+        "token": "",
+        "x": 990,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d93e6a26f65488da",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/weather clear",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "a29b47b4f643b8d7"
+            ]
+        ]
+    },
+    {
+        "id": "1d992468cff55355",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The sky is clear now",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "2eec20ad9035bed3"
+            ]
+        ]
+    },
+    {
+        "id": "9838a3f1512f236b",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "My name is 2B, I am the Android supporter of Minecraft Boss Arena. The commands you might need are !arena start, to start the Minigame and !wave start to start the next wave after every wave you slayed. If you do not want to be disturbed by the weather, type !weather clear.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "e652ac0767f9934c"
+            ]
+        ]
+    },
+    {
+        "id": "e652ac0767f9934c",
+        "type": "discordMessageManager",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channel": "1421183909135253575",
+        "token": "",
+        "x": 690,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bc29d9fe3454c7c",
+        "type": "discordMessage",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channelIdFilter": "1421183909135253575",
+        "token": "",
+        "x": 100,
+        "y": 1180,
+        "wires": [
+            [
+                "37dd73e3940a7beb"
+            ]
+        ]
+    },
+    {
+        "id": "37dd73e3940a7beb",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "!arena start",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 1180,
+        "wires": [
+            [
+                "f89a9dc79b51616f",
+                "60e23cc6159e8584",
+                "27918e129d671bc2",
+                "009a338623797015",
+                "d82dd3766074bc8e",
+                "cb2c60ca8f0bafb2",
+                "8a166733278a8cd8",
+                "fe2ee47e30b9028c"
+            ]
+        ]
+    },
+    {
+        "id": "f89a9dc79b51616f",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/tp @a 0 78 0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1180,
+        "wires": [
+            [
+                "8a3a97be10ddeb56"
+            ]
+        ]
+    },
+    {
+        "id": "8a3a97be10ddeb56",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 830,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60e23cc6159e8584",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/clear @a",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1140,
+        "wires": [
+            [
+                "8a3a97be10ddeb56"
+            ]
+        ]
+    },
+    {
+        "id": "a2404692aac422eb",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:cooked_beef 16",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1220,
+        "wires": [
+            [
+                "8a3a97be10ddeb56"
+            ]
+        ]
+    },
+    {
+        "id": "32777f0ecf0ca9f6",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:stone_sword 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1260,
+        "wires": [
+            [
+                "8a3a97be10ddeb56"
+            ]
+        ]
+    },
+    {
+        "id": "8f4e5641c29038d0",
+        "type": "discordMessage",
+        "z": "708823b3b82f1324",
+        "name": "Wave Counter",
+        "channelIdFilter": "",
+        "token": "",
+        "x": 110,
+        "y": 1400,
+        "wires": [
+            [
+                "1b54be7d05dc8b87"
+            ]
+        ]
+    },
+    {
+        "id": "27918e129d671bc2",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "wave",
+                "pt": "flow",
+                "to": "0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "isWaveStarted",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "wavesCompleted",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "currentWaveCompleted",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b54be7d05dc8b87",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "!wave start",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 270,
+        "y": 1400,
+        "wires": [
+            [
+                "4c721c47388ea2ce"
+            ]
+        ]
+    },
+    {
+        "id": "4c721c47388ea2ce",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 5",
+        "func": "if(flow.get(\"currentWaveCompleted\")==true&&flow.get(\"wavesCompleted\")<6){\nlet wave = flow.get(\"wave\") || 0;  // Default to 0 if undefined or falsy\nwave = Number(wave) + 1;            // Convert to number and add 1\nflow.set(\"isWaveStarted\",false);\nflow.set(\"wave\", wave);\nflow.set(\"currentWaveCompleted\",false);\n\nmsg.payload = \"Starting wave \" + flow.get(\"wave\");\nreturn msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1400,
+        "wires": [
+            [
+                "fad696e700ad7345"
+            ]
+        ]
+    },
+    {
+        "id": "fad696e700ad7345",
+        "type": "discordMessageManager",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channel": "1421183909135253575",
+        "token": "",
+        "x": 710,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba38824fc7d5f869",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "ed3c4d5de7e4b6d7",
+                "ae24e1fdd6c01a2e"
+            ]
+        ]
+    },
+    {
+        "id": "ed3c4d5de7e4b6d7",
+        "type": "debug",
+        "z": "708823b3b82f1324",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "83dd08339cd4dea7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "CHANGE NAME",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/execute store result score DarkMiking mobCount if entity @e[type=!player,type=!item,type=!arrow,type=!snowball,type=!egg,type=!trident,type=!fireball,distance=..40]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "ba38824fc7d5f869"
+            ]
+        ]
+    },
+    {
+        "id": "0691a6e84408c973",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "83dd08339cd4dea7",
+                "cf8496cc7fe1135e",
+                "9d620c960eafef4b"
+            ]
+        ]
+    },
+    {
+        "id": "dfa83b5b0198cb52",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 430,
+        "y": 40,
+        "wires": [
+            [
+                "3e6b2d7a4d99a310"
+            ]
+        ]
+    },
+    {
+        "id": "3e6b2d7a4d99a310",
+        "type": "debug",
+        "z": "708823b3b82f1324",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "80e34b591a32b4a1",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/scoreboard objectives add mobCount dummy",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "dfa83b5b0198cb52"
+            ]
+        ]
+    },
+    {
+        "id": "66ef95309fed0d26",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "80e34b591a32b4a1"
+            ]
+        ]
+    },
+    {
+        "id": "cf8496cc7fe1135e",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Checking for Mobs:",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "ed3c4d5de7e4b6d7"
+            ]
+        ]
+    },
+    {
+        "id": "ea726def7bde91ae",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 1700,
+        "wires": [
+            [
+                "36fb0a1a5626b532"
+            ]
+        ]
+    },
+    {
+        "id": "36fb0a1a5626b532",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 6",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==1){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1700,
+        "wires": [
+            [
+                "0330ae2897f3668f"
+            ]
+        ]
+    },
+    {
+        "id": "ae24e1fdd6c01a2e",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Test failed",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [
+                "16afaafa12252b16"
+            ],
+            [
+                "8f194246bd621f2a"
+            ]
+        ]
+    },
+    {
+        "id": "16afaafa12252b16",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "numMobs",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f194246bd621f2a",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 7",
+        "func": "const str = msg.payload;\nconst numberOnly = str.replace(/\\D/g, ''); // Remove all non-digit characters\nconst number = Number(numberOnly);\nmsg.payload = number;\nflow.set(\"numMobs\", number);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fddda9ab0c18c1f1",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76938c1b0f715127",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 3100,
+        "wires": [
+            [
+                "1036cfb4d8aa998a"
+            ]
+        ]
+    },
+    {
+        "id": "1036cfb4d8aa998a",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 8",
+        "func": "if(flow.get(\"mobSpawned\")==true&&flow.get(\"numMobs\")==0){\n    flow.set(\"mobSpawned\",false);\n    flow.set(\"currentWaveCompleted\",true);\n    \n    let wave = flow.get(\"wavesCompleted\") || 0;  // Default to 0 if undefined or falsy\n    wave = Number(wave) + 1;            // Convert to number and add 1\n\n    flow.set(\"wavesCompleted\", wave);\n    msg.payload = wave;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 3100,
+        "wires": [
+            [
+                "2cfea11197bd7301",
+                "f56beaf133843670",
+                "7030860fc07dcc76"
+            ]
+        ]
+    },
+    {
+        "id": "51aa54fde2815e4b",
+        "type": "discordMessageManager",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "channel": "1421183909135253575",
+        "token": "",
+        "x": 610,
+        "y": 3100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cfea11197bd7301",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Wave completed!!!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 3100,
+        "wires": [
+            [
+                "51aa54fde2815e4b"
+            ]
+        ]
+    },
+    {
+        "id": "009a338623797015",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d82dd3766074bc8e",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 1260,
+        "wires": [
+            [
+                "32777f0ecf0ca9f6"
+            ]
+        ]
+    },
+    {
+        "id": "cb2c60ca8f0bafb2",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 1220,
+        "wires": [
+            [
+                "a2404692aac422eb"
+            ]
+        ]
+    },
+    {
+        "id": "f56beaf133843670",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 370,
+        "y": 3180,
+        "wires": [
+            [
+                "c7042b4a06a67f69",
+                "84ea3b38ca0530bd",
+                "b9fe355e80296182",
+                "31dc615ff803ef57"
+            ],
+            [
+                "a38f48ab4f1108ef",
+                "6e329d5c9567fa08",
+                "8871f97ce25bfbf8"
+            ],
+            [
+                "583438b5bb47ebd7",
+                "e7feaf0632d644d2",
+                "0fb50f25c50d23c8",
+                "6da617ad112ef828"
+            ],
+            [
+                "aef8f77691e5ed01",
+                "8a440d7b279cdc30",
+                "983688d3cc9ea4ed",
+                "42189cc0af29b53b"
+            ],
+            [
+                "51aff68eefb10538",
+                "7f3f39642ef0e04f"
+            ],
+            [
+                "a3cc3bd0fb5e4c27",
+                "033bb8f9a295c73f"
+            ]
+        ]
+    },
+    {
+        "id": "c7042b4a06a67f69",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:chainmail_chestplate",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3140,
+        "wires": [
+            [
+                "a916f7c02e5fe838"
+            ]
+        ]
+    },
+    {
+        "id": "84ea3b38ca0530bd",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:chainmail_boots",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3180,
+        "wires": [
+            [
+                "a916f7c02e5fe838"
+            ]
+        ]
+    },
+    {
+        "id": "b9fe355e80296182",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:shield",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3220,
+        "wires": [
+            [
+                "a916f7c02e5fe838"
+            ]
+        ]
+    },
+    {
+        "id": "a916f7c02e5fe838",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 3140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa179cc52feefbee",
+        "type": "playerinfo",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "infoType": "health",
+        "player": "@p",
+        "x": 450,
+        "y": 800,
+        "wires": [
+            [
+                "121c424fdb4d333e"
+            ]
+        ]
+    },
+    {
+        "id": "59a7649a5ed54ef7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "DarkMiking",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "fa179cc52feefbee"
+            ]
+        ]
+    },
+    {
+        "id": "631165609c5c042a",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 800,
+        "wires": [
+            [
+                "59a7649a5ed54ef7"
+            ]
+        ]
+    },
+    {
+        "id": "121c424fdb4d333e",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 9",
+        "func": "msg.payload = msg.payload.value;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 800,
+        "wires": [
+            [
+                "1b25c3ad1d238c45"
+            ]
+        ]
+    },
+    {
+        "id": "1b25c3ad1d238c45",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "7017413be8b42313"
+            ]
+        ]
+    },
+    {
+        "id": "8dae93bea781ad9b",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "!arena start",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 1140,
+        "wires": [
+            [
+                "37dd73e3940a7beb"
+            ]
+        ]
+    },
+    {
+        "id": "7017413be8b42313",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 800,
+        "wires": [
+            [
+                "8dae93bea781ad9b"
+            ]
+        ]
+    },
+    {
+        "id": "c662a57eddcb3bd6",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a8c76489987dfe7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon skeleton -5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1920,
+        "wires": [
+            [
+                "c662a57eddcb3bd6"
+            ]
+        ]
+    },
+    {
+        "id": "f4bd1166ce53e01c",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1960,
+        "wires": [
+            [
+                "0a8c76489987dfe7",
+                "2c7253f69eedaa02",
+                "5e5046cef8b28a31",
+                "75f7b9a803d41db3",
+                "6296a9382c6dac7f",
+                "3dcaad1bc90cbf2a"
+            ]
+        ]
+    },
+    {
+        "id": "7a63b0ca67e15be3",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 1960,
+        "wires": [
+            [
+                "f1422812a238b842"
+            ]
+        ]
+    },
+    {
+        "id": "f1422812a238b842",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 10",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==2){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1960,
+        "wires": [
+            [
+                "f4bd1166ce53e01c"
+            ]
+        ]
+    },
+    {
+        "id": "2c7253f69eedaa02",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a38f48ab4f1108ef",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a trident[enchantments={loyalty:3}]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3340,
+        "wires": [
+            [
+                "fd2c6e226db488a5"
+            ]
+        ]
+    },
+    {
+        "id": "6e329d5c9567fa08",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:diamond_helmet 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3380,
+        "wires": [
+            [
+                "fd2c6e226db488a5"
+            ]
+        ]
+    },
+    {
+        "id": "8871f97ce25bfbf8",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:iron_leggings 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3420,
+        "wires": [
+            [
+                "fd2c6e226db488a5"
+            ]
+        ]
+    },
+    {
+        "id": "fd2c6e226db488a5",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31dc615ff803ef57",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a iron_sword[enchantments={fire_aspect:2}]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3260,
+        "wires": [
+            [
+                "a916f7c02e5fe838"
+            ]
+        ]
+    },
+    {
+        "id": "8a166733278a8cd8",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/kill @e[type=!player]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1300,
+        "wires": [
+            [
+                "8a3a97be10ddeb56"
+            ]
+        ]
+    },
+    {
+        "id": "5d29c5ae072a4390",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 2200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a91f9578d679f10c",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon wither_skeleton -5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2160,
+        "wires": [
+            [
+                "5d29c5ae072a4390"
+            ]
+        ]
+    },
+    {
+        "id": "accf8c6470cf26b3",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 2200,
+        "wires": [
+            [
+                "a91f9578d679f10c",
+                "08ef624e20b8b01b",
+                "e68edda4621fe805",
+                "3a6ddc981dbc0d64",
+                "0c2ca8e2ffd1447e",
+                "2e13f709d7c08dd5"
+            ]
+        ]
+    },
+    {
+        "id": "2a1ba526ea9c3e0b",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 2200,
+        "wires": [
+            [
+                "b0a43cd04b1048c4"
+            ]
+        ]
+    },
+    {
+        "id": "b0a43cd04b1048c4",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 11",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==3){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2200,
+        "wires": [
+            [
+                "accf8c6470cf26b3"
+            ]
+        ]
+    },
+    {
+        "id": "08ef624e20b8b01b",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e68edda4621fe805",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon wither_skeleton 5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2200,
+        "wires": [
+            [
+                "5d29c5ae072a4390"
+            ]
+        ]
+    },
+    {
+        "id": "3a6ddc981dbc0d64",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon blaze 5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2240,
+        "wires": [
+            [
+                "5d29c5ae072a4390"
+            ]
+        ]
+    },
+    {
+        "id": "0c2ca8e2ffd1447e",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon magma_cube -5 80 -5 {Size:2,Passengers:[{id:\"minecraft:magma_cube\",Size:1,Passengers:[{id:\"minecraft:magma_cube\",Size:0}]}]}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2280,
+        "wires": [
+            [
+                "5d29c5ae072a4390"
+            ]
+        ]
+    },
+    {
+        "id": "5e5046cef8b28a31",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon stray 5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1960,
+        "wires": [
+            [
+                "c662a57eddcb3bd6"
+            ]
+        ]
+    },
+    {
+        "id": "75f7b9a803d41db3",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon spider 5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2000,
+        "wires": [
+            [
+                "c662a57eddcb3bd6"
+            ]
+        ]
+    },
+    {
+        "id": "6296a9382c6dac7f",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon husk -5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2040,
+        "wires": [
+            [
+                "c662a57eddcb3bd6"
+            ]
+        ]
+    },
+    {
+        "id": "583438b5bb47ebd7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a netherite_spear[enchantments={lunge:3}]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3540,
+        "wires": [
+            [
+                "a3d8c630f8eba6d8"
+            ]
+        ]
+    },
+    {
+        "id": "e7feaf0632d644d2",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a netherite_boots",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3580,
+        "wires": [
+            [
+                "a3d8c630f8eba6d8"
+            ]
+        ]
+    },
+    {
+        "id": "0fb50f25c50d23c8",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a enchanted_golden_apple 2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3620,
+        "wires": [
+            [
+                "a3d8c630f8eba6d8"
+            ]
+        ]
+    },
+    {
+        "id": "a3d8c630f8eba6d8",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 3540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6da617ad112ef828",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:cooked_beef 16",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3660,
+        "wires": [
+            [
+                "a3d8c630f8eba6d8"
+            ]
+        ]
+    },
+    {
+        "id": "a009f6fcd4faefe7",
+        "type": "rpi-sensehat out",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "x": 530,
+        "y": 4320,
+        "wires": []
+    },
+    {
+        "id": "6f235ec939d8ef79",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 4260,
+        "wires": [
+            [
+                "0ce1a1a3b598847a"
+            ]
+        ]
+    },
+    {
+        "id": "0ce1a1a3b598847a",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*,2,purple,*,0,purple,*,4-7,purple,0,1,purple,7,1,purple,0,3,purple,7,3,purple",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 4260,
+        "wires": [
+            [
+                "a009f6fcd4faefe7"
+            ]
+        ]
+    },
+    {
+        "id": "f5f2eb525456e814",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 4320,
+        "wires": [
+            [
+                "bfe4b7d4f41d8f6d"
+            ]
+        ]
+    },
+    {
+        "id": "bfe4b7d4f41d8f6d",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*,*,black",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 4320,
+        "wires": [
+            [
+                "a009f6fcd4faefe7"
+            ]
+        ]
+    },
+    {
+        "id": "228866666b730783",
+        "type": "rpi-sensehat out",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "x": 590,
+        "y": 3040,
+        "wires": []
+    },
+    {
+        "id": "7030860fc07dcc76",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 16",
+        "func": "if(flow.get(\"wavesCompleted\")!=0){\nmsg.payload = `1-${flow.get(\"wavesCompleted\")},1,red`;\nreturn msg;}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 3040,
+        "wires": [
+            [
+                "228866666b730783"
+            ]
+        ]
+    },
+    {
+        "id": "75bfd072c2947efa",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dcaad1bc90cbf2a",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e13f709d7c08dd5",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "6",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d620c960eafef4b",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 17",
+        "func": "let numMobs = flow.get(\"numMobs\");\nlet nwMobs = flow.get(\"nwMobs\");\n\nif (numMobs > 0 && nwMobs > 0) {\n    let ratio = numMobs / nwMobs;\n    let pixelsLit = Math.round(ratio * 6);\n\n    // Clamp pixelsLit between 1 and 6\n    pixelsLit = Math.min(Math.max(pixelsLit, 1), 6);\n\n    msg.payload = `1-${pixelsLit},3,green`;\n} else {\n    // No mobs or invalid nwMobs, show empty or black display\n    msg.payload = \"1-6,3,black\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "e8546506e78f2433"
+            ]
+        ]
+    },
+    {
+        "id": "e8546506e78f2433",
+        "type": "rpi-sensehat out",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "x": 450,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0c0ec98dec8aed27",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1-6,3,black",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "e8546506e78f2433"
+            ]
+        ]
+    },
+    {
+        "id": "72e028062cb22ec8",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "0c0ec98dec8aed27"
+            ]
+        ]
+    },
+    {
+        "id": "7978cd65070dd136",
+        "type": "rpi-sensehat out",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "x": 830,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "fe2ee47e30b9028c",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "*,*,black",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1060,
+        "wires": [
+            [
+                "7978cd65070dd136"
+            ]
+        ]
+    },
+    {
+        "id": "187c216cdf19563d",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00ddbc27d5068380",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon ravager -5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2440,
+        "wires": [
+            [
+                "187c216cdf19563d"
+            ]
+        ]
+    },
+    {
+        "id": "46e135828e7d68d9",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 2480,
+        "wires": [
+            [
+                "00ddbc27d5068380",
+                "1910ee0d535c5d76",
+                "5cdf44772ad317c2",
+                "918bc93f4dc20744",
+                "5229c00d7feabd91",
+                "c346bbbc8d0cc31a"
+            ]
+        ]
+    },
+    {
+        "id": "bc49023bada322fd",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 2480,
+        "wires": [
+            [
+                "040a108ccc1b11fe"
+            ]
+        ]
+    },
+    {
+        "id": "040a108ccc1b11fe",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 19",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==4){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2480,
+        "wires": [
+            [
+                "46e135828e7d68d9"
+            ]
+        ]
+    },
+    {
+        "id": "1910ee0d535c5d76",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 2400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cdf44772ad317c2",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon evoker 5 80 5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2480,
+        "wires": [
+            [
+                "187c216cdf19563d"
+            ]
+        ]
+    },
+    {
+        "id": "918bc93f4dc20744",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon illusioner 5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2520,
+        "wires": [
+            [
+                "187c216cdf19563d"
+            ]
+        ]
+    },
+    {
+        "id": "5229c00d7feabd91",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon witch -5 80 -5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2560,
+        "wires": [
+            [
+                "187c216cdf19563d"
+            ]
+        ]
+    },
+    {
+        "id": "c346bbbc8d0cc31a",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee4acba9fb72dd20",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 2700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35a2e6d5ad9c6267",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 2740,
+        "wires": [
+            [
+                "26064f8952b05392",
+                "a20d13c6e1d770f9",
+                "7718ace880415224"
+            ]
+        ]
+    },
+    {
+        "id": "d7f8f4f7562c0b3e",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 2740,
+        "wires": [
+            [
+                "2745731523bbef5b"
+            ]
+        ]
+    },
+    {
+        "id": "2745731523bbef5b",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 20",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==5){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2740,
+        "wires": [
+            [
+                "35a2e6d5ad9c6267"
+            ]
+        ]
+    },
+    {
+        "id": "26064f8952b05392",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 2660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a20d13c6e1d770f9",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "summon zombie 0 80 0 {IsBaby:1,CustomName:[{text:Akim,color:aqua}],CustomNameVisible:1b,Health:250,active_effects:[{id:speed,duration:13000,amplifier:3,show_particles:0b}],equipment:{mainhand:{id:diamond_sword},head:{id:diamond_helmet}},attributes:[{id:max_health,base:250f}]}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2700,
+        "wires": [
+            [
+                "ee4acba9fb72dd20"
+            ]
+        ]
+    },
+    {
+        "id": "7718ace880415224",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1254ae761b2d6448",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 890,
+        "y": 2860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "186033d0cb241476",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon creeper 5 80 5 {powered:1b}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2820,
+        "wires": [
+            [
+                "1254ae761b2d6448"
+            ]
+        ]
+    },
+    {
+        "id": "66af8c934009ce26",
+        "type": "delay",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 2860,
+        "wires": [
+            [
+                "186033d0cb241476",
+                "4fd5795d034b0c0d",
+                "97bf7307bc24a5f3",
+                "9b7bfadee1676835",
+                "3f3e28a482f27ff0",
+                "fa5754dd2d98cdf7"
+            ]
+        ]
+    },
+    {
+        "id": "4aafc13a2c4eb56f",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 2860,
+        "wires": [
+            [
+                "70f75fbee8b5a45a"
+            ]
+        ]
+    },
+    {
+        "id": "70f75fbee8b5a45a",
+        "type": "function",
+        "z": "708823b3b82f1324",
+        "name": "function 21",
+        "func": "if(flow.get(\"isWaveStarted\")==false&&flow.get(\"wave\")==6){\n    flow.set(\"isWaveStarted\",true);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2860,
+        "wires": [
+            [
+                "66af8c934009ce26"
+            ]
+        ]
+    },
+    {
+        "id": "4fd5795d034b0c0d",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mobSpawned",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 2780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97bf7307bc24a5f3",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon drowned -5 80 5 {Health:100,equipment:{mainhand:{id:trident}},attributes:[{id:max_health,base:100f}]}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2860,
+        "wires": [
+            [
+                "1254ae761b2d6448"
+            ]
+        ]
+    },
+    {
+        "id": "9b7bfadee1676835",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "summon wither_skeleton 5 80 -5 {CustomName:[{text:DarkMiking,color:dark_purple}],CustomNameVisible:1b,Health:100,active_effects:[{id:strength,duration:10001,amplifier:4,show_particles:0b}],equipment:{mainhand:{id:netherite_sword},offhand:{id:netherite_spear},head:{id:netherite_helmet}},attributes:[{id:max_health,base:100f}]}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2900,
+        "wires": [
+            [
+                "1254ae761b2d6448"
+            ]
+        ]
+    },
+    {
+        "id": "3f3e28a482f27ff0",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/summon vindicator -5 80 -5 {IsImmuneToZombification:1,Health:60,active_effects:[{id:speed,duration:10001,amplifier:3,show_particles:0b}],equipment:{mainhand:{id:netherite_axe},head:{id:golden_helmet}},attributes:[{id:max_health,base:60f}]}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2940,
+        "wires": [
+            [
+                "1254ae761b2d6448"
+            ]
+        ]
+    },
+    {
+        "id": "fa5754dd2d98cdf7",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nwMobs",
+                "pt": "flow",
+                "to": "4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 2980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d0a7577aeea658c",
+        "type": "rpi-sensehat in",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "motion": true,
+        "env": true,
+        "stick": true,
+        "x": 130,
+        "y": 4400,
+        "wires": [
+            [
+                "a53d35a12ae65375"
+            ]
+        ]
+    },
+    {
+        "id": "a53d35a12ae65375",
+        "type": "switch",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ENTER",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 4400,
+        "wires": [
+            [
+                "348a1d1ce368bece"
+            ]
+        ]
+    },
+    {
+        "id": "348a1d1ce368bece",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/kill @e[type=!player]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 4400,
+        "wires": [
+            [
+                "8621a2e77296f29d"
+            ]
+        ]
+    },
+    {
+        "id": "8621a2e77296f29d",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 650,
+        "y": 4400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aef8f77691e5ed01",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "give @a netherite_sword[custom_name=[{\"text\":\"T\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"w\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"i\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"l\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"ig\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"ht\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\" \",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"E\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"d\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"g\",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"e\",\"italic\":false,\"color\":\"dark_purple\"}],lore=[[{\"text\":\"Forged in the dying light of a fading sun, \",\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\"The Twilight's Edge\",\"bold\":true,\"italic\":false,\"color\":\"dark_purple\"},{\"text\":\" is a blade whispered about in legends and feared by those who dwell in darkness. It is said that this sword was crafted by an ancient order of twilight guardians, warriors sworn to protect the fragile balance between day and night.\",\"italic\":false,\"color\":\"dark_purple\"}]],rarity=epic,enchantments={fire_aspect:2,sharpness:5,smite:2,sweeping_edge:3,unbreaking:3}]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3780,
+        "wires": [
+            [
+                "f052afb2ad92a4cb"
+            ]
+        ]
+    },
+    {
+        "id": "8a440d7b279cdc30",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a netherite_helmet",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3820,
+        "wires": [
+            [
+                "f052afb2ad92a4cb"
+            ]
+        ]
+    },
+    {
+        "id": "983688d3cc9ea4ed",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a netherite_chestplate",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3860,
+        "wires": [
+            [
+                "f052afb2ad92a4cb"
+            ]
+        ]
+    },
+    {
+        "id": "f052afb2ad92a4cb",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 3780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42189cc0af29b53b",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a netherite_leggings",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3900,
+        "wires": [
+            [
+                "f052afb2ad92a4cb"
+            ]
+        ]
+    },
+    {
+        "id": "671f964812d0393b",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 3980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f3f39642ef0e04f",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p minecraft:cooked_beef 16",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 4020,
+        "wires": [
+            [
+                "671f964812d0393b"
+            ]
+        ]
+    },
+    {
+        "id": "51aff68eefb10538",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a enchanted_golden_apple 2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 3980,
+        "wires": [
+            [
+                "671f964812d0393b"
+            ]
+        ]
+    },
+    {
+        "id": "934ce6c89e8334eb",
+        "type": "rcon",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "server": "5ae5accec5dcedc6",
+        "command": "",
+        "x": 730,
+        "y": 4100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "033bb8f9a295c73f",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @a firework_rocket 32",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 4140,
+        "wires": [
+            [
+                "934ce6c89e8334eb"
+            ]
+        ]
+    },
+    {
+        "id": "a3cc3bd0fb5e4c27",
+        "type": "change",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "/give @p elytra 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 4100,
+        "wires": [
+            [
+                "934ce6c89e8334eb"
+            ]
+        ]
+    },
+    {
+        "id": "7f08a6332e7a7791",
+        "type": "inject",
+        "z": "708823b3b82f1324",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 4460,
+        "wires": [
+            [
+                "348a1d1ce368bece"
+            ]
+        ]
+    },
+    {
+        "id": "5ae5accec5dcedc6",
+        "type": "serverconfig",
+        "host": "localhost",
+        "rconPort": 25575,
+        "rconPassword": "teinf"
+    },
+    {
+        "id": "95c84838be10ab89",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@tomsith/node-red-contrib-minecraft": "0.7.7",
+            "node-red-contrib-discord-advanced": "3.6.0",
+            "node-red-node-pi-sense-hat": "0.2.0"
+        }
+    }
+]
