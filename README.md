@@ -11,7 +11,7 @@ This command prepares your world for the incoming waves. You will be teleported 
 This command triggers the next wave. It only works if you have already used the first command and there is no current wave in progress.
 
 ### !help
-If you forget any of these commands, you can type !help and the bot will remind you. You may also find some additional quality-of-life commands listed in the help menu.
+If you forget any of these commands, you can type !help and the bot will remind you. You may also find some additional quality-of-life commands listed in the help menu.  Just as a final note, you can use the Sense Hat's stick to skip waves.
 
 ## How to set up the project
 To set up this project, you will need the following materials:
@@ -30,5 +30,5 @@ Open Node-RED in your browser on port 1881 (enter your Raspberry Pi's IP address
 Download the project's Node-RED file and import it. For every node related to Discord, you will need to add your Discord bot's token and the channel ID of the channel you wish to use. In one of the Minecraft-related nodes (It is named CHANGE NAME and at the very top), change the username from "DarkMiking" to your own username (or the username of any other player you will be playing with).
 
 ### How to set up your Minecraft world
-Open Minecraft with your preferred client. Go to "Multiplayer" and connect to the server by entering your Raspberry Pi's IP address. The arena event takes place around coordinates 0, 80, 0. Feel free to build your arena there or import an existing one. Once this is done, you should be ready to go! Just as a final note, you can use the Sense Hat's stick to skip waves.
+Open Minecraft with your preferred client. Go to "Multiplayer" and connect to the server by entering your Raspberry Pi's IP address. The arena event takes place around coordinates 0, 80, 0. Feel free to build your arena there or import an existing one. Once this is done, you should be ready to go!
 
